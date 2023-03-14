@@ -14,6 +14,6 @@ def read_item(item_id: int, q: str = None):
 
 @app.get("/hello/{name}")
 def read_name(name: str = None):
-    return {"gello":name}
+    return {"hello":name}
 
 handler = Mangum(app)
